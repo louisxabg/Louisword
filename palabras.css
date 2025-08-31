@@ -1,0 +1,218 @@
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #87CEEB, #FFB6C1);
+  
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h1 {
+  margin-top: 1rem;
+  font-size: 2rem;
+  color: #2c3e50;
+}
+
+.top-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 1rem 0;
+}
+
+.top-bar label,
+.top-bar select,
+#timer {
+  font-size: 1rem;
+}
+
+.rosco {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 1rem auto;
+  transition: transform 0.5s ease;
+}
+
+.rosco-center {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.letter {
+  position: absolute;
+  transform-origin: center;
+  font-size: 1rem;
+
+  width: 24px;
+  height: 24px;
+  background: #fff;
+  border: 2px solid #3498db;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 24px;
+  font-weight: bold;
+  color: #3498db;
+  transition: background 0.3s, color 0.3s;
+}
+
+.letter.active {
+  background: #f1c40f;
+  color: #fff;
+}
+
+.letter.correct {
+  background: #2ecc71;
+  color: #fff;
+}
+
+.letter.incorrect {
+  background: #e74c3c;
+  color: #fff;
+}
+
+.letter.passed {
+  background: #95a5a6;
+  color: #fff;
+}
+
+.question-container {
+  max-width: 90%;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+#question {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+#answer {
+  padding: 0.5rem;
+  font-size: 1rem;
+  width: 80%;
+  max-width: 400px;
+  margin-bottom: 1rem;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+button:hover {
+  background: #2980b9;
+
+  transform: scale(1.05);
+}
+
+#correctCounter {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.score {
+  width: 90%;
+  max-width: 500px;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.score h3 {
+  margin-top: 0;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .rosco {
+    width: 220px;
+    height: 220px;
+  }
+
+  .letter {
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    font-size: 0.8rem;
+  }
+
+  .rosco-center {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@keyframes rotarRosco {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.tw-tag {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 14px;
+  font-family: sans-serif;
+  color: #555;
+  opacity: 0.8;
+}
+
+
+.name-container {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#playerName {
+  padding: 5px;
+  font-size: 16px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.skipped {
+  background-color: gray !important;
+  color: white !important;
+}
