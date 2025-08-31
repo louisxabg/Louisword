@@ -34,10 +34,10 @@ h1 {
 }
 
 .rosco {
-  position: relative;
   width: 300px;
   height: 300px;
-  margin: 1rem auto;
+  position: relative;
+  border-radius: 50%;
   transition: transform 0.5s ease;
 }
 
@@ -49,7 +49,15 @@ h1 {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
+.rosco-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centra horizontalmente */
+  justify-content: center; /* opcional, centra verticalmente si hace falta */
+  gap: 1rem; /* espacio entre rosco y preguntas */
+  width: 100%;
+  margin: 1rem 0;
+}
 .letter {
   position: absolute;
   transform-origin: center;
@@ -160,7 +168,9 @@ button:hover {
     width: 220px;
     height: 220px;
   }
-
+@media (max-width: 768px) {
+  .rosco { width: 250px; height: 250px; }
+}
   .letter {
     width: 26px;
     height: 26px;
@@ -257,3 +267,4 @@ button:hover {
   .rosco-center { width: 40px; height: 40px; }
   .letter { width: 18px; height: 18px; line-height: 18px; font-size: 0.7rem; }
 }
+
