@@ -218,7 +218,7 @@ button:hover {
 
 }
 
-/* Misc */
+/* MISC */
 .tw-tag {
   position: absolute;
   top: 10px;
@@ -231,18 +231,18 @@ button:hover {
 
 .hidden { display: none; }
 
-/* Rosco Animation */
+/* ROSCO ANIMATION */
 @keyframes rotarRosco {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
 
-/* Media Queries para móviles */
+/* MEDIA QUERIES PARA RESPONSIVE */
 @media (max-width: 768px) {
   h1 { font-size: 1.8rem; }
   #question { font-size: 1.1rem; }
   #answer { width: 90%; font-size: 0.95rem; }
-  button { font-size: 0.9rem; padding: 0.4rem 0.8rem; }
+  button { font-size: 0.95rem; padding: 0.4rem 0.8rem; }
   .rosco { width: 250px; height: 250px; }
   .rosco-center { width: 50px; height: 50px; }
   .letter { width: 22px; height: 22px; line-height: 22px; font-size: 0.85rem; }
