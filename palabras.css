@@ -251,7 +251,7 @@ button:hover {
   #question { font-size: 1.1rem; }
   #answer { width: 90%; font-size: 0.95rem; }
   button { font-size: 0.95rem; padding: 0.4rem 0.8rem; }
-  .rosco { width: 250px; height: 250px; }
+  .rosco { width: 200px; height: 250px; }
   .rosco-center { width: 50px; height: 50px; }
   .letter { width: 22px; height: 22px; line-height: 22px; font-size: 0.85rem; }
 }
@@ -265,5 +265,6 @@ button:hover {
   .rosco-center { width: 40px; height: 40px; }
   .letter { width: 18px; height: 18px; line-height: 18px; font-size: 0.7rem; }
 }
+
 
 
