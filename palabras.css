@@ -215,4 +215,45 @@ button:hover {
 .skipped {
   background-color: gray !important;
   color: white !important;
+
+}
+
+/* Misc */
+.tw-tag {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 14px;
+  font-family: sans-serif;
+  color: #555;
+  opacity: 0.8;
+}
+
+.hidden { display: none; }
+
+/* Rosco Animation */
+@keyframes rotarRosco {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Media Queries para móviles */
+@media (max-width: 768px) {
+  h1 { font-size: 1.8rem; }
+  #question { font-size: 1.1rem; }
+  #answer { width: 90%; font-size: 0.95rem; }
+  button { font-size: 0.9rem; padding: 0.4rem 0.8rem; }
+  .rosco { width: 250px; height: 250px; }
+  .rosco-center { width: 50px; height: 50px; }
+  .letter { width: 22px; height: 22px; line-height: 22px; font-size: 0.85rem; }
+}
+
+@media (max-width: 480px) {
+  h1 { font-size: 1.5rem; }
+  #question { font-size: 1rem; }
+  #answer { font-size: 0.9rem; }
+  button { font-size: 0.85rem; padding: 0.35rem 0.7rem; }
+  .rosco { width: 200px; height: 200px; }
+  .rosco-center { width: 40px; height: 40px; }
+  .letter { width: 18px; height: 18px; line-height: 18px; font-size: 0.7rem; }
 }
