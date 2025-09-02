@@ -171,8 +171,13 @@ button:hover {
   .rosco {
     width: 220px;
     height: 220px;
-    margin: 0rem 0 rem -20px;
-  }}
+    margin: 1rem auto;
+    position: relative;
+  }
+  .rosco .letter {
+    left: calc(50% - 12px - 15px);
+  }
+}
 
   .letter {
     width: 26px;
@@ -270,6 +275,7 @@ button:hover {
   .rosco-center { width: 40px; height: 40px; }
   .letter { width: 18px; height: 18px; line-height: 18px; font-size: 0.7rem; }
 }
+
 
 
 
