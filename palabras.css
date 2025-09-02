@@ -177,6 +177,11 @@ button:hover {
   .rosco .letter {
     left: calc(50% - 12px - 15px);
   }
+.rosco-center {
+  left: 50% !important;
+  top: 50% !important;
+  transform: translate(-50%, -50%)!
+    important;}
 }
 
   .letter {
@@ -275,6 +280,7 @@ button:hover {
   .rosco-center { width: 40px; height: 40px; }
   .letter { width: 18px; height: 18px; line-height: 18px; font-size: 0.7rem; }
 }
+
 
 
 
