@@ -46,6 +46,8 @@ h1 {
   width: 300px;
   height: 300px;
   border-radius: 50%;
+  flex-shrink: 0;
+  oerflow: visible;
 }
 
 .rosco-center {
@@ -184,9 +186,10 @@ button:hover {
   #answer { font-size: 0.9rem; }
   button { font-size: 0.85rem; padding: 0.35rem 0.7rem; }
   .rosco { width: 200px; height: 200px; }
-  .rosco-center { width: 40px; height: 40px; }
-  .letter { width: 18px; height: 18px; line-height: 18px; font-size: 0.7rem; }
+  .rosco-center { width: 40px; height: 40px; left: 50%; top: 50%; transform: translate(-50%, -50%); }
+  .letter { width: 18px; height: 18px; line-height: 18px; font-size: 0.7rem; border: 2px solid transparent; }
 }
+
 
 
 
