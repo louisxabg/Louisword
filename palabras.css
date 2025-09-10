@@ -1,10 +1,9 @@
-
 body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
   background: linear-gradient(to bottom, #87CEEB, #FFB6C1);
-  
+ 
 
   display: flex;
   flex-direction: column;
@@ -37,7 +36,6 @@ h1 {
   width: 300px;
   height: 300px;
   position: relative;
-  margin: 0 auto;
   border-radius: 50%;
   transition: transform 0.5s ease;
 }
@@ -49,7 +47,6 @@ h1 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 2;
 }
 .rosco-container {
   display: flex;
@@ -75,7 +72,6 @@ h1 {
   font-weight: bold;
   color: #3498db;
   transition: background 0.3s, color 0.3s;
-  z-index: 1;
 }
 
 .letter.active {
@@ -170,34 +166,15 @@ button:hover {
     width: 250px;
     height: 250px;
   }
-  .rosco-center {
-    width: 50px; 
-    height: 50px;}
-  .letter {
-    width: 22px;
-    height: 22px;
-    line-height: 22px; font-size: 0.85rem;}}
-
 @media (max-width: 480px) {
   .rosco {
     width: 220px;
     height: 220px;
-    transform: translateX(-10px):
+    margin: 1rem 0 rem -40px;
+  }}
+  .rosco .letter {
+    transform: translateX(-45px)
   }
-  .rosco-center {
-    width: 40px; 
-    height: 40px; 
-    trnsform: translate(-50%, -50%);
-  }
-  .letter {
-    width: 18px; 
-    height: 18px;
-    line-height:18px;
-    font-size: 0.7rem;}
-.roscp.letter {
-  left: calc(50%- 10px - 0px);
-}
-}
 .rosco-center {
   left: 50% !important;
   top: 50% !important;
@@ -301,4 +278,3 @@ button:hover {
   .rosco-center { width: 40px; height: 40px; }
   .letter { width: 18px; height: 18px; line-height: 18px; font-size: 0.7rem; }
 }
-
