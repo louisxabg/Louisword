@@ -40,14 +40,21 @@ h1 {
   width: 100%;
   margin: 1rem 0;
 }
-
+.rosco-wrpper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+  min-height: 320px;
+}
 .rosco {
   position: relative;
   width: 300px;
   height: 300px;
   border-radius: 50%;
   flex-shrink: 0;
-  oerflow: visible;
+
 }
 
 .rosco-center {
@@ -189,6 +196,7 @@ button:hover {
   .rosco-center { width: 40px; height: 40px; left: 50%; top: 50%; transform: translate(-50%, -50%); }
   .letter { width: 18px; height: 18px; line-height: 18px; font-size: 0.7rem; border: 2px solid transparent; }
 }
+
 
 
 
