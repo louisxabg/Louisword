@@ -29,7 +29,7 @@ h1 {
   justify-content: center;
   align-items: center;
   width: 100%;
-  min-height: 300px;
+  height: 200px;
   margin: 0 auto;
   position: relative;
 }
@@ -104,7 +104,7 @@ button:hover { background: #2980b9; transform: scale(1.05); }
   #answer { width: 90%; font-size: 0.95rem; }
   button { font-size: 0.95rem; padding: 0.4rem 0.8rem; }
   .rosco { width: 250px; height: 250px; }
-  .rosco-container { min-height: 250px;}
+  .rosco-center { width: 45px; height: 45px; }
   .letter { width: 22px; height: 22px; line-height: 22px; font-size: 0.85rem; }
 }
 
@@ -114,9 +114,10 @@ button:hover { background: #2980b9; transform: scale(1.05); }
   #answer { font-size: 0.9rem; }
   button { font-size: 0.85rem; padding: 0.35rem 0.7rem; }
   .rosco { width: 200px; height: 200px; }
-  .rosco-container { min-height: 250px;}
+  .rosco-center { width: 45px; height: 45px; }
   .letter { width: 18px; height: 18px; line-height: 18px; font-size: 0.7rem; }
 }
+
 
 
 
